@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"primary-fixed":"#f2ded9","secondary-container":"#fd9d80","on-secondary-container":"#77331d","surface-container-lowest":"#ffffff","on-secondary-fixed":"#3a0a00","tertiary-fixed":"#d5e8d0","on-primary-container":"#a69591","outline":"#807572","surface":"#fcf9f4","on-surface":"#1c1c19","on-tertiary-container":"#8b9d88","tertiary-container":"#253424","outline-variant":"#d2c3c0","surface-container-highest":"#e5e2dd","surface-container-high":"#ebe8e3","on-tertiary-fixed":"#101f10","on-tertiary":"#ffffff","inverse-on-surface":"#f3f0eb","on-primary":"#ffffff","inverse-surface":"#31302d","on-secondary-fixed-variant":"#76321d","secondary":"#944931","primary":"#241917","secondary-fixed-dim":"#ffb59f","surface-container-low":"#f6f3ee","error":"#ba1a1a","background":"#fcf9f4","on-error":"#ffffff","surface-variant":"#e5e2dd","tertiary-fixed-dim":"#b9ccb5","surface-bright":"#fcf9f4","on-primary-fixed":"#241916","on-background":"#1c1c19","on-primary-fixed-variant":"#514440","primary-fixed-dim":"#d6c2be","surface-dim":"#dcdad5","surface-tint":"#6a5b58","error-container":"#ffdad6","on-surface-variant":"#4e4542","on-error-container":"#93000a","on-tertiary-fixed-variant":"#3b4b39","inverse-primary":"#d6c2be","tertiary":"#101f10","on-secondary":"#ffffff","surface-container":"#f0ede9","secondary-fixed":"#ffdbd0","primary-container":"#3a2e2b"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-md":"1rem","margin":"1.25rem","gutter-desktop":"2rem","gutter":"1.25rem","space-sm":"0.5rem","space-lg":"1.5rem","space-xl":"2.5rem","margin-desktop":"3rem","space-xs":"0.25rem"},fontFamily:{"label-sm":["Plus Jakarta Sans"],"headline-sm":["Newsreader"],"display-hero-mobile":["Newsreader"],"body-md":["Plus Jakarta Sans"],"display-hero":["Newsreader"],"body-lg":["Newsreader"],"counter-number":["Newsreader"],"headline-lg-mobile":["Newsreader"],"headline-md":["Newsreader"],"headline-lg":["Newsreader"],"body-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"]},fontSize:{"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"display-hero-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.01em","fontWeight":"400"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"display-hero":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"400"}],"body-lg":["19px",{"lineHeight":"30px","fontWeight":"400"}],"counter-number":["28px",{"lineHeight":"32px","fontWeight":"500"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","fontWeight":"400"}],"headline-md":["26px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"500"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.015em","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}]}}}};</script><link rel="icon" type="image/svg+xml" href="assets/favicon.svg"/></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(58,46,43,0.04)]"><div class="h-20 max-w-[1200px] mx-auto px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Folio &amp; Hearth Emblem" class="h-8 w-auto object-contain" src="assets/img/73fde722b3b4.jpg"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">Folio &amp; Hearth</span><span class="font-label-sm text-[11px] text-on-surface-variant tracking-normal mt-0.5">A Quiet Sanctuary for Bookworms</span></div></div><div class="hidden xl:flex items-center ml-space-sm"><div class="relative flex items-center"><span aria-hidden="true" class="material-symbols-outlined absolute left-3 text-outline text-[18px] pointer-events-none">search</span><input class="w-56 pl-9 pr-space-md py-1.5 rounded-full bg-surface-container-low text-on-surface placeholder:text-outline text-body-sm font-body-sm focus:outline-none focus:bg-surface-container-lowest transition-all" placeholder="Titles, authors, ISBN..." type="text"/></div></div></div><nav class="hidden lg:flex items-center gap-1.5 bg-surface-container-low px-2 py-1.5 rounded-full" data-active-classes="bg-primary-container text-surface font-label-md rounded-full shadow-sm"><a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="the-hearth" href="index.html">The Hearth</a><a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="the-sanctuary" href="bookshelf.html">The Sanctuary</a><a aria-current="page" class="px-3.5 py-1.5 transition-all bg-primary-container text-surface font-label-md rounded-full shadow-sm" data-path="curated-nook" href="discovery.html">Curated Nook</a><a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="the-tea-table" href="community.html">The Tea Table</a><a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="ink-and-quill" href="workshop.html">Ink &amp; Quill</a></nav><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm"><span class="text-[14px]">☕</span><span>42m read today</span></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="hidden md:flex flex-col items-end text-right"><span class="font-label-sm text-[11px] text-on-surface-variant uppercase tracking-wider">Yearly Path</span><span class="font-headline-sm text-body-sm text-secondary font-medium leading-none">14 / 25 read</span></div><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container" src="assets/img/4573d3c7aa55.jpg"/><span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 bg-secondary rounded-full ring-1 ring-surface"></span></div></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-140px)]"><div class="max-w-[1200px] mx-auto px-gutter-desktop py-space-lg"><div class="flex flex-col w-full">
+<!-- Top Curatorial Banner -->
+<section class="relative w-full mb-space-xl">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg pb-space-lg">
+<div class="max-w-2xl space-y-space-xs">
+<div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm tracking-wider uppercase">
+<span aria-hidden="true" class="material-symbols-outlined text-[16px]">auto_stories</span>
+<span>Curated Sanctuary • Issue Nº 42</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">The Curated Nook — Discover Your Next Companion</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+          An unhurried haven crafted for discerning readers. Step away from algorithmic noise into bespoke literary resonances, quiet recommendations, and unexpected kinships waiting between parchment covers.
+        </p>
+</div>
+<!-- Quick Tonal Stats -->
+<div class="flex items-center gap-space-lg bg-surface-container-low px-space-lg py-space-md rounded-xl shadow-sm">
+<div class="flex flex-col">
+<span class="font-counter-number text-counter-number text-primary leading-none">842</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant uppercase tracking-wider mt-1">Shelved Gems</span>
+</div>
+<div class="w-px h-8 bg-surface-container-highest"></div>
+<div class="flex flex-col">
+<span class="font-counter-number text-counter-number text-secondary leading-none">98.4%</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant uppercase tracking-wider mt-1">Reader Harmony</span>
+</div>
+<div class="w-px h-8 bg-surface-container-highest"></div>
+<div class="flex flex-col">
+<span class="font-counter-number text-counter-number text-primary leading-none">12m</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant uppercase tracking-wider mt-1">Avg Tea Steep</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Dual Bento: Taste Quiz & Whimsical Dice Generator -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-xl items-stretch">
+<!-- Interactive Feature 1: The Book Lover's Taste Quiz -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="p-2 rounded-full bg-primary-fixed text-primary flex items-center justify-center">
+<span aria-hidden="true" class="material-symbols-outlined text-[18px]">psychology_alt</span>
+</span>
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Soul Affinity</span>
+<h2 class="font-headline-md text-headline-sm text-primary">The Book Lover's Taste Quiz</h2>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-low px-3 py-1 rounded-full text-on-surface-variant">
+            3 Peaceful Questions
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-lg">
+          Tune your internal compass. Allow current season, twilight lighting, and interior tempo to sculpt tonight's story match.
+        </p>
+<!-- Question 1 -->
+<div class="mb-space-md">
+<label class="block font-label-md text-label-md text-on-surface mb-2">
+            1. What atmosphere do you seek tonight?
+          </label>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2" id="quiz-q1">
+<button class="quiz-btn-q1 active px-3 py-2.5 rounded-lg text-left bg-primary text-on-primary font-body-sm text-body-sm transition-all shadow-sm" data-val="foggy" type="button">
+<span class="text-[13px] block font-medium">Foggy Cobblestones</span>
+<span class="text-[11px] opacity-75">Mist &amp; lanternlight</span>
+</button>
+<button class="quiz-btn-q1 px-3 py-2.5 rounded-lg text-left bg-surface-container-low hover:bg-surface-container text-on-surface font-body-sm text-body-sm transition-all" data-val="garden" type="button">
+<span class="text-[13px] block font-medium">Sunlit Garden</span>
+<span class="text-[11px] text-on-surface-variant">Dew &amp; verbena</span>
+</button>
+<button class="quiz-btn-q1 px-3 py-2.5 rounded-lg text-left bg-surface-container-low hover:bg-surface-container text-on-surface font-body-sm text-body-sm transition-all" data-val="cabin" type="button">
+<span class="text-[13px] block font-medium">Mountain Cabin</span>
+<span class="text-[11px] text-on-surface-variant">Cedar &amp; seclusion</span>
+</button>
+<button class="quiz-btn-q1 px-3 py-2.5 rounded-lg text-left bg-surface-container-low hover:bg-surface-container text-on-surface font-body-sm text-body-sm transition-all" data-val="library" type="button">
+<span class="text-[13px] block font-medium">Velvet Armchair</span>
+<span class="text-[11px] text-on-surface-variant">Old oak &amp; tea</span>
+</button>
+</div>
+</div>
+<!-- Question 2 -->
+<div class="mb-space-lg">
+<label class="block font-label-md text-label-md text-on-surface mb-2">
+            2. Your ideal pacing?
+          </label>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2" id="quiz-q2">
+<button class="quiz-btn-q2 active px-3 py-2 rounded-lg text-center bg-primary text-on-primary font-body-sm text-body-sm transition-all shadow-sm" data-val="lyrical" type="button">
+              Lyrical &amp; lingering
+            </button>
+<button class="quiz-btn-q2 px-3 py-2 rounded-lg text-center bg-surface-container-low hover:bg-surface-container text-on-surface font-body-sm text-body-sm transition-all" data-val="intrigue" type="button">
+              Page-turning intrigue
+            </button>
+<button class="quiz-btn-q2 px-3 py-2 rounded-lg text-center bg-surface-container-low hover:bg-surface-container text-on-surface font-body-sm text-body-sm transition-all" data-val="slice" type="button">
+              Gentle slice-of-life
+            </button>
+</div>
+</div>
+</div>
+<!-- Active Quiz Result Preview Drawer -->
+<div class="bg-surface-container-low rounded-xl p-space-md transition-all" id="quiz-result-card">
+<div class="flex items-start justify-between gap-space-sm mb-2">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold" id="quiz-match-vibe">
+              Your match: Atmospheric Solitude
+            </span>
+</div>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Updated just now</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-primary mb-1" id="quiz-match-titles">
+          “Small Things Like These” or “Convenience Store Woman”
+        </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed" id="quiz-match-desc">
+          Luminous, distilled prose with intense reverence for sensory micro-moments. Ideal for a slow evening steeped with chamomile.
+        </p>
+<div class="mt-space-sm flex items-center justify-between pt-2">
+<div class="flex items-center gap-space-xs text-on-surface font-label-sm text-label-sm">
+<span aria-hidden="true" class="material-symbols-outlined text-[16px] text-secondary">bookmark_add</span>
+<span>Saved to your personal discovery queue</span>
+</div>
+<button class="px-3.5 py-1.5 rounded-full bg-primary-container text-surface hover:bg-primary font-label-sm text-label-sm transition-colors shadow-sm" type="button">
+            Inspect Edition
+          </button>
+</div>
+</div>
+</div>
+<!-- Interactive Feature 2: Whimsical Random Book Generator -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="p-2 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center">
+<span aria-hidden="true" class="material-symbols-outlined text-[18px]">casino</span>
+</span>
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Fortuitous Serendipity</span>
+<h2 class="font-headline-md text-headline-sm text-primary">Whimsical Wanderer</h2>
+</div>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+          Release choice paralysis to fate. Spin the cedar turnstile to receive a handpicked gem outside your usual algorithmic radius.
+        </p>
+<!-- Generator Sub-Filters -->
+<div class="flex flex-wrap items-center gap-2 mb-space-md">
+<button class="filter-pill active px-3 py-1 rounded-full font-label-sm text-label-sm bg-primary text-on-primary transition-all" id="gen-filter-1" type="button">
+            Under 300 pages
+          </button>
+<button class="filter-pill px-3 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-low text-on-surface hover:bg-surface-container transition-all" id="gen-filter-2" type="button">
+            Any length
+          </button>
+<button class="filter-pill px-3 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-low text-on-surface hover:bg-surface-container transition-all" id="gen-filter-3" type="button">
+            Translated fiction
+          </button>
+</div>
+<!-- The Spinning Action Trigger -->
+<button class="w-full group relative overflow-hidden py-3 px-4 rounded-xl bg-primary text-on-primary flex items-center justify-center gap-space-sm hover:bg-primary-container transition-all shadow-sm mb-space-md" id="roll-dice-btn" type="button">
+<span aria-hidden="true" class="material-symbols-outlined text-[20px] transition-transform duration-500 group-hover:rotate-180" id="dice-icon">casino</span>
+<span class="font-label-md text-label-md">Roll for an Unexpected Journey</span>
+</button>
+</div>
+<!-- Generated Book Showcase Card -->
+<div class="relative bg-surface-container-low rounded-xl p-space-md flex flex-col sm:flex-row gap-space-md transition-all" id="generated-card-container">
+<div class="relative w-24 h-36 flex-shrink-0 rounded-lg overflow-hidden shadow-md bg-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="A delicate book cover featuring a gentle calico cat perched on the hood of a vintage silver station wagon under Japanese cherry blossom trees, styled in warm nostalgic watercolor tones with muted ochre and terracotta highlights." id="gen-book-cover" src="assets/img/c9fce1f3dd34.jpg"/>
+<div class="absolute inset-y-0 left-0 w-1.5 bg-black/20"></div>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div>
+<div class="flex items-center justify-between gap-1 mb-1">
+<span class="font-label-sm text-[11px] text-secondary font-medium tracking-wide uppercase">Serendipity Hit</span>
+<div class="flex items-center gap-1 bg-surface-container-lowest px-2 py-0.5 rounded-full shadow-xs">
+<span aria-hidden="true" class="material-symbols-outlined text-[13px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-[11px] font-semibold text-on-surface" id="gen-book-rating">4.7</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary truncate leading-tight" id="gen-book-title">
+              The Travelling Cat Chronicles
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2" id="gen-book-author">
+              Hiro Arikawa • 288 pages
+            </p>
+<div class="bg-surface-container-lowest/80 p-2.5 rounded-lg mb-2">
+<span class="font-label-sm text-[11px] text-primary font-semibold block mb-0.5">Why you'll love it:</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant line-clamp-2 leading-relaxed" id="gen-book-reason">
+                Bittersweet, profoundly warm road trip across coastal Japan narrated through feline pragmatism and unconditional companionship.
+              </p>
+</div>
+</div>
+<div class="flex items-center justify-between gap-2 pt-1">
+<span class="font-label-sm text-[11px] text-on-surface-variant">Linen hardcover &amp; audio ready</span>
+<button class="px-3 py-1.5 rounded-full bg-secondary text-on-secondary hover:bg-secondary/90 font-label-sm text-label-sm transition-all shadow-sm flex items-center gap-1" id="add-nightstand-btn" type="button">
+<span aria-hidden="true" class="material-symbols-outlined text-[14px]">night_shelter</span>
+<span id="nightstand-text">Add to Nightstand</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Deep Literary Exploration Filter Bar -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm mb-space-xl">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mb-space-md pb-space-sm">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Refine Your Reading Sanctuary</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Distill our slow archive by aesthetic resonance and physical book volume.</p>
+</div>
+<!-- Page Count Slider Recess -->
+<div class="flex items-center gap-space-md bg-surface-container-low px-space-md py-2 rounded-xl">
+<span class="font-label-sm text-label-sm text-on-surface-variant whitespace-nowrap">Volume:</span>
+<div class="flex items-center gap-1">
+<button class="page-tier-btn px-2.5 py-1 rounded-md text-[12px] font-label-sm bg-surface text-on-surface shadow-xs hover:bg-surface-container transition-colors" type="button">
+            &lt; 200p
+          </button>
+<button class="page-tier-btn active px-2.5 py-1 rounded-md text-[12px] font-label-sm bg-primary text-on-primary shadow-xs transition-colors" type="button">
+            200 – 400p
+          </button>
+<button class="page-tier-btn px-2.5 py-1 rounded-md text-[12px] font-label-sm bg-surface text-on-surface shadow-xs hover:bg-surface-container transition-colors" type="button">
+            400p +
+          </button>
+</div>
+</div>
+</div>
+<!-- Aesthetic Chips -->
+<div class="flex flex-wrap items-center gap-space-xs pt-1">
+<button class="deep-chip active px-4 py-1.5 rounded-full font-label-sm text-label-sm bg-primary-container text-surface shadow-xs transition-all flex items-center gap-1.5" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Cozy Solitude</span>
+</button>
+<button class="deep-chip px-4 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container-low hover:bg-surface-container text-on-surface transition-all flex items-center gap-1.5" type="button">
+<span aria-hidden="true" class="material-symbols-outlined text-[14px] text-tertiary">potted_plant</span>
+<span>Cottagecore &amp; Botanicals</span>
+</button>
+<button class="deep-chip px-4 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container-low hover:bg-surface-container text-on-surface transition-all flex items-center gap-1.5" type="button">
+<span aria-hidden="true" class="material-symbols-outlined text-[14px] text-secondary">magic_button</span>
+<span>Warm Magical Realism</span>
+</button>
+<button class="deep-chip px-4 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container-low hover:bg-surface-container text-on-surface transition-all flex items-center gap-1.5" type="button">
+<span aria-hidden="true" class="material-symbols-outlined text-[14px] text-outline">clock_loader_40</span>
+<span>Quiet Philosophical</span>
+</button>
+<button class="deep-chip px-4 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container-low hover:bg-surface-container text-on-surface transition-all flex items-center gap-1.5" type="button">
+<span aria-hidden="true" class="material-symbols-outlined text-[14px] text-primary">local_printshop</span>
+<span>Indie &amp; Unreleased Small Presses</span>
+</button>
+</div>
+</section>
+<!-- Curated Recommendation Shelf 1: Piranesi Resonance -->
+<section class="mb-space-xl">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between mb-space-md gap-2">
+<div>
+<div class="flex items-center gap-2 text-secondary font-label-sm text-label-sm tracking-wider uppercase mb-1">
+<span aria-hidden="true" class="material-symbols-outlined text-[16px]">all_inclusive</span>
+<span>Resonance Matrix</span>
+</div>
+<h2 class="font-headline-lg text-headline-md text-primary">Because You Loved “Piranesi”</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Labyrinthine wonder, gentle solitary narrators, and atmospheric majesty that defies mundane reality.</p>
+</div>
+<a class="font-label-md text-label-md text-secondary hover:text-on-secondary-container flex items-center gap-1 transition-colors" href="bookshelf.html">
+<span>Browse complete matrix</span>
+<span aria-hidden="true" class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Book 1 -->
+<div class="group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="relative w-full aspect-[2/3] rounded-lg overflow-hidden mb-space-md bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="An ethereal book cover with classical marble statuary immersed in misty emerald oceanic tides, inspired by labyrinthine halls, bathed in soft afternoon light with rich linen parchment textures." src="assets/img/b1703b3551a3.jpg"/>
+<div class="absolute inset-y-0 left-0 w-2 bg-black/25"></div>
+<div class="absolute top-3 right-3 bg-primary/90 backdrop-blur-md px-2.5 py-1 rounded-full text-surface font-label-sm text-[11px] shadow-sm">
+              96% Match
+            </div>
+</div>
+<div class="flex items-center gap-1.5 mb-1.5">
+<span aria-hidden="true" class="material-symbols-outlined text-secondary text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">4.62</span>
+<span class="text-outline text-body-sm text-[12px]">• 4,210 readers</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-0.5 leading-snug">The Starless Sea</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Erin Morgenstern</p>
+<p class="font-body-sm text-[13px] text-on-surface-variant line-clamp-3 leading-relaxed mb-space-md">
+            Subterranean sanctuaries guarded by acolytes, doorways cut into timeless ballrooms, and ancient stories braided together with honey and keyholes.
+          </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-[11px] text-outline uppercase tracking-wider">512 pages</span>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm transition-colors flex items-center gap-1" type="button">
+<span aria-hidden="true" class="material-symbols-outlined text-[14px]">bookmark</span>
+<span>Reserve</span>
+</button>
+</div>
+</div>
+<!-- Book 2 -->
+<div class="group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="relative w-full aspect-[2/3] rounded-lg overflow-hidden mb-space-md bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="An atmospheric book cover featuring an infinite misty forest with quiet ancient monoliths and a glowing candlelit wooden library cottage nestled between mossy rocks." src="assets/img/e1a2fcd3db89.jpg"/>
+<div class="absolute inset-y-0 left-0 w-2 bg-black/25"></div>
+<div class="absolute top-3 right-3 bg-primary/90 backdrop-blur-md px-2.5 py-1 rounded-full text-surface font-label-sm text-[11px] shadow-sm">
+              92% Match
+            </div>
+</div>
+<div class="flex items-center gap-1.5 mb-1.5">
+<span aria-hidden="true" class="material-symbols-outlined text-secondary text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">4.51</span>
+<span class="text-outline text-body-sm text-[12px]">• 2,890 readers</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-0.5 leading-snug">The Memory Police</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Yoko Ogawa</p>
+<p class="font-body-sm text-[13px] text-on-surface-variant line-clamp-3 leading-relaxed mb-space-md">
+            On an unnamed island, objects vanish from reality: birds, ribbons, roses. A quiet, poetic meditation on preservation, grief, and quiet defiance.
+          </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-[11px] text-outline uppercase tracking-wider">288 pages</span>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm transition-colors flex items-center gap-1" type="button">
+<span aria-hidden="true" class="material-symbols-outlined text-[14px]">bookmark</span>
+<span>Reserve</span>
+</button>
+</div>
+</div>
+<!-- Book 3 -->
+<div class="group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="relative w-full aspect-[2/3] rounded-lg overflow-hidden mb-space-md bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A minimalist and poetic book cover showing an empty stone temple surrounded by calm tide pools reflecting dusk starlight, subtle linen texture and typography in warm gold." src="assets/img/cbb9cbed0a8a.jpg"/>
+<div class="absolute inset-y-0 left-0 w-2 bg-black/25"></div>
+<div class="absolute top-3 right-3 bg-primary/90 backdrop-blur-md px-2.5 py-1 rounded-full text-surface font-label-sm text-[11px] shadow-sm">
+              88% Match
+            </div>
+</div>
+<div class="flex items-center gap-1.5 mb-1.5">
+<span aria-hidden="true" class="material-symbols-outlined text-secondary text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">4.48</span>
+<span class="text-outline text-body-sm text-[12px]">• 1,940 readers</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-0.5 leading-snug">The House in the Cerulean Sea</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">TJ Klune</p>
+<p class="font-body-sm text-[13px] text-on-surface-variant line-clamp-3 leading-relaxed mb-space-md">
+            A heartwarming sanctuary on an isolated island where eccentric magical youths learn companionship alongside a fastidious bureaucrat finding home.
+          </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-[11px] text-outline uppercase tracking-wider">396 pages</span>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm transition-colors flex items-center gap-1" type="button">
+<span aria-hidden="true" class="material-symbols-outlined text-[14px]">bookmark</span>
+<span>Reserve</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Split Showcase: Talk of the Month & Community Secret Gems -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-xl">
+<!-- Books Readers Cannot Stop Talking About This Month -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Fireside Dialogues</span>
+<h2 class="font-headline-md text-headline-sm text-primary">Unputdownable This Month</h2>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface-variant">
+          October Salons
+        </span>
+</div>
+<div class="space-y-space-md">
+<!-- Item 1 -->
+<div class="flex items-center gap-space-md p-space-sm rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="w-16 h-24 flex-shrink-0 rounded-md overflow-hidden bg-surface-container shadow-xs">
+<img class="w-full h-full object-cover" data-alt="Book cover illustration of an apothecary shop in a 19th-century snowbound London street, vintage botanical details and warm amber window glow." src="assets/img/e67b9cc70467.jpg"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-2 mb-0.5">
+<h3 class="font-headline-sm text-[17px] text-primary truncate leading-tight">The Lost Apothecary</h3>
+<span class="font-label-sm text-[11px] bg-secondary-fixed text-on-secondary-fixed px-2 py-0.5 rounded-full">Top Discussed</span>
+</div>
+<p class="font-body-sm text-[13px] text-on-surface-variant mb-1">Sarah Penner • Historical Mystery</p>
+<p class="font-body-sm text-[12px] text-on-surface-variant line-clamp-1 italic">
+              “Discussed across 83 tea tables this week alone. Secrets hidden in medicinal vials.”
+            </p>
+</div>
+<div class="text-right flex flex-col items-end">
+<span class="font-counter-number text-[20px] text-primary">314</span>
+<span class="font-label-sm text-[10px] text-outline uppercase">Comments</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex items-center gap-space-md p-space-sm rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="w-16 h-24 flex-shrink-0 rounded-md overflow-hidden bg-surface-container shadow-xs">
+<img class="w-full h-full object-cover" data-alt="Cover of a literary novel depicting a cozy vintage typewriter resting on a rustic wooden desk overlooking an autumn forest mist." src="assets/img/0d82d5c25a10.jpg"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-2 mb-0.5">
+<h3 class="font-headline-sm text-[17px] text-primary truncate leading-tight">Foster</h3>
+<span class="font-label-sm text-[11px] bg-surface-container text-on-surface px-2 py-0.5 rounded-full">Short Read</span>
+</div>
+<p class="font-body-sm text-[13px] text-on-surface-variant mb-1">Claire Keegan • 88 pages • Irish Fiction</p>
+<p class="font-body-sm text-[12px] text-on-surface-variant line-clamp-1 italic">
+              “An ache of affection so subtle you barely notice your breath catching.”
+            </p>
+</div>
+<div class="text-right flex flex-col items-end">
+<span class="font-counter-number text-[20px] text-primary">248</span>
+<span class="font-label-sm text-[10px] text-outline uppercase">Comments</span>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex items-center gap-space-md p-space-sm rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="w-16 h-24 flex-shrink-0 rounded-md overflow-hidden bg-surface-container shadow-xs">
+<img class="w-full h-full object-cover" data-alt="Artful book cover illustration of an antique Tokyo coffee shop seen from an evening rain-slicked alleyway, cozy amber warmth." src="assets/img/e3faf8f99f20.jpg"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-2 mb-0.5">
+<h3 class="font-headline-sm text-[17px] text-primary truncate leading-tight">Before the Coffee Gets Cold</h3>
+<span class="font-label-sm text-[11px] bg-tertiary-fixed text-on-tertiary-fixed px-2 py-0.5 rounded-full">Beloved</span>
+</div>
+<p class="font-body-sm text-[13px] text-on-surface-variant mb-1">Toshikazu Kawaguchi • Magic Realism</p>
+<p class="font-body-sm text-[12px] text-on-surface-variant line-clamp-1 italic">
+              “A cafe in Tokyo that allows time-travel, under one strict condition: return before coffee cools.”
+            </p>
+</div>
+<div class="text-right flex flex-col items-end">
+<span class="font-counter-number text-[20px] text-primary">192</span>
+<span class="font-label-sm text-[10px] text-outline uppercase">Comments</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Community Secret Gems (Less than 1,000 ratings) -->
+<div class="lg:col-span-5 bg-surface-container-low rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Quiet Whispers</span>
+<h2 class="font-headline-md text-headline-sm text-primary">Secret Gems (&lt;1k Ratings)</h2>
+</div>
+<span aria-hidden="true" class="material-symbols-outlined text-outline">lock_open</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+          Exquisite discoveries protected from virality. Small batch press prints, forgotten translations, and gentle memoirs.
+        </p>
+<div class="space-y-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-xs">
+<div class="flex items-start justify-between">
+<div>
+<h4 class="font-headline-sm text-[16px] text-primary">The Blue Book of Nebo</h4>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Manon Steffan Ros • 150 pages</p>
+</div>
+<span class="font-label-sm text-[11px] font-semibold text-secondary bg-secondary-fixed/50 px-2 py-0.5 rounded-full">
+                742 ratings
+              </span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-1.5 leading-relaxed">
+              Tender post-apocalyptic Welsh novella exploring mother and son documenting their quiet mountain survival into a found notebook.
+            </p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-xs">
+<div class="flex items-start justify-between">
+<div>
+<h4 class="font-headline-sm text-[16px] text-primary">Cold Enough for Snow</h4>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Jessica Au • 104 pages</p>
+</div>
+<span class="font-label-sm text-[11px] font-semibold text-secondary bg-secondary-fixed/50 px-2 py-0.5 rounded-full">
+                890 ratings
+              </span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-1.5 leading-relaxed">
+              Quiet strolls through Tokyo galleries, train rides, and meals. A mother-daughter dynamic articulated through delicate silence.
+            </p>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Nominated by The Folio Guild</span>
+<button class="font-label-sm text-label-sm text-primary hover:text-secondary font-medium transition-colors" type="button">
+          Nominate a Gem →
+        </button>
+</div>
+</div>
+</section>
+<!-- Ex Libris Reading Commitment Note -->
+<section class="bg-surface-container-high rounded-xl p-space-lg text-center max-w-3xl mx-auto shadow-sm">
+<span aria-hidden="true" class="material-symbols-outlined text-[28px] text-secondary mb-2">local_florist</span>
+<h3 class="font-headline-md text-headline-sm text-primary mb-2">Our Promise of Unhurried Reading</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xl mx-auto leading-relaxed">
+      Folio &amp; Hearth does not measure books by speeds, streaks, or checklists. Read two pages by the kettle or absorb an entire volume until morning twilight. What matters is the quiet conversation within.
+    </p>
+</section>
+</div>
+<script>
+  (function initCuratedNook() {
+    // Taste Quiz Interaction
+    const q1Buttons = document.querySelectorAll('.quiz-btn-q1');
+    const q2Buttons = document.querySelectorAll('.quiz-btn-q2');
+    const vibeLabel = document.getElementById('quiz-match-vibe');
+    const titlesLabel = document.getElementById('quiz-match-titles');
+    const descLabel = document.getElementById('quiz-match-desc');
+
+    const quizMap = {
+      'foggy-lyrical': {
+        vibe: 'Atmospheric Solitude',
+        titles: '“Small Things Like These” or “Convenience Store Woman”',
+        desc: 'Luminous, distilled prose with intense reverence for sensory micro-moments. Ideal for a slow evening steeped with chamomile.'
+      },
+      'foggy-intrigue': {
+        vibe: 'Gothic Hearth Enigma',
+        titles: '“The Thirteenth Tale” or “Fingersmith”',
+        desc: 'Shadowed corridors, ancient estate libraries, and confessions revealed by dwindling candleglow.'
+      },
+      'foggy-slice': {
+        vibe: 'Melancholic Warmth',
+        titles: '“A Month in the Country” or “Foster”',
+        desc: 'Gentle summer winds healing bruised spirits. Short, exquisite, and unhurried.'
+      },
+      'garden-lyrical': {
+        vibe: 'Botanical Reverie',
+        titles: '“Braiding Sweetgrass” or “The Secret Life of Plants”',
+        desc: 'Deep communion with moss, rivers, and the quiet wisdom of root systems.'
+      },
+      'garden-intrigue': {
+        vibe: 'Sun-Dappled Whodunit',
+        titles: '“The Maidens” or “Magpie Murders”',
+        desc: 'Puzzles tucked into orchard picnics and ivy-clad college quads.'
+      },
+      'garden-slice': {
+        vibe: 'Cottage Comfort',
+        titles: '“The Blue Castle” or “Enchanted April”',
+        desc: 'Escape to seaside wisteria, blooming honeysuckle, and rediscovered joy.'
+      },
+      'cabin-lyrical': {
+        vibe: 'Nordic Stillness',
+        titles: '“Drive Your Plow Over the Bones of the Dead” or “Out Stealing Horses”',
+        desc: 'Crisp pine needles, falling snow, and deep introspective isolation.'
+      },
+      'cabin-intrigue': {
+        vibe: 'Fireside Suspense',
+        titles: '“The Sanatorium” or “Rock Paper Scissors”',
+        desc: 'Blizzards trapping travelers in cedar lodges where old secrets unravel.'
+      },
+      'cabin-slice': {
+        vibe: 'Off-Grid Solace',
+        titles: '“Wintering” or “The Salt Path”',
+        desc: 'Physical rest, seasonal pauses, and restoration beneath wide starry skies.'
+      },
+      'library-lyrical': {
+        vibe: 'Scholarly Echoes',
+        titles: '“Possession” or “The Shadow of the Wind”',
+        desc: 'Reverence for printed folios, secret letters, and generational literary devotion.'
+      },
+      'library-intrigue': {
+        vibe: 'Dark Academia Crypt',
+        titles: '“Babel” or “The Secret History”',
+        desc: 'Velvet jackets, dusty Greek archives, and intellectual obsession gone astray.'
+      },
+      'library-slice': {
+        vibe: 'Bookshop Haven',
+        titles: '“Days at the Morisaki Bookshop” or “The Bookshop of Yesterdays”',
+        desc: 'Stacked paperbacks, kettle steam, and heartwarming conversations with friendly secondhand dealers.'
+      }
+    };
+
+    let selectedQ1 = 'foggy';
+    let selectedQ2 = 'lyrical';
+
+    function updateQuizOutcome() {
+      const key = `${selectedQ1}-${selectedQ2}`;
+      const outcome = quizMap[key] || quizMap['foggy-lyrical'];
+      if (vibeLabel) vibeLabel.textContent = `Your match: ${outcome.vibe}`;
+      if (titlesLabel) titlesLabel.textContent = outcome.titles;
+      if (descLabel) descLabel.textContent = outcome.desc;
+    }
+
+    q1Buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        q1Buttons.forEach(b => {
+          b.classList.remove('bg-primary', 'text-on-primary', 'active');
+          b.classList.add('bg-surface-container-low', 'text-on-surface');
+        });
+        btn.classList.remove('bg-surface-container-low', 'text-on-surface');
+        btn.classList.add('bg-primary', 'text-on-primary', 'active');
+        selectedQ1 = btn.getAttribute('data-val') || 'foggy';
+        updateQuizOutcome();
+      });
+    });
+
+    q2Buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        q2Buttons.forEach(b => {
+          b.classList.remove('bg-primary', 'text-on-primary', 'active');
+          b.classList.add('bg-surface-container-low', 'text-on-surface');
+        });
+        btn.classList.remove('bg-surface-container-low', 'text-on-surface');
+        btn.classList.add('bg-primary', 'text-on-primary', 'active');
+        selectedQ2 = btn.getAttribute('data-val') || 'lyrical';
+        updateQuizOutcome();
+      });
+    });
+
+    // Random Book Generator Interaction
+    const rollBtn = document.getElementById('roll-dice-btn');
+    const diceIcon = document.getElementById('dice-icon');
+    const genBookTitle = document.getElementById('gen-book-title');
+    const genBookAuthor = document.getElementById('gen-book-author');
+    const genBookRating = document.getElementById('gen-book-rating');
+    const genBookReason = document.getElementById('gen-book-reason');
+    const nightstandBtn = document.getElementById('add-nightstand-btn');
+    const nightstandText = document.getElementById('nightstand-text');
+    const genContainer = document.getElementById('generated-card-container');
+
+    const randomPool = [
+      {
+        title: 'The Travelling Cat Chronicles',
+        author: 'Hiro Arikawa • 288 pages',
+        rating: '4.7',
+        reason: 'Bittersweet, profoundly warm road trip across coastal Japan narrated through feline pragmatism and unconditional companionship.'
+      },
+      {
+        title: 'The Kamogawa Food Detectives',
+        author: 'Hisashi Kashiwai • 208 pages',
+        rating: '4.6',
+        reason: 'A hidden Kyoto diner recreates unforgettable meals from visitors\' pasts. Pure emotional nourishment.'
+      },
+      {
+        title: 'What You Are Looking For Is in the Library',
+        author: 'Michiko Aoyama • 272 pages',
+        rating: '4.8',
+        reason: 'An eccentric Tokyo librarian offers unexpected reading recommendations alongside handmade felt tokens that gently alter life trajectories.'
+      },
+      {
+        title: 'The Elegance of the Hedgehog',
+        author: 'Muriel Barbery • 325 pages',
+        rating: '4.5',
+        reason: 'An ultra-erudite Paris concierge hiding behind unassuming facade. Deeply humorous philosophical reflections.'
+      }
+    ];
+
+    let currentGenIndex = 0;
+
+    if (rollBtn) {
+      rollBtn.addEventListener('click', () => {
+        if (diceIcon) {
+          diceIcon.classList.add('rotate-[360deg]');
+          setTimeout(() => diceIcon.classList.remove('rotate-[360deg]'), 600);
+        }
+
+        if (genContainer) {
+          genContainer.classList.add('opacity-50');
+          setTimeout(() => {
+            currentGenIndex = (currentGenIndex + 1) % randomPool.length;
+            const item = randomPool[currentGenIndex];
+            if (genBookTitle) genBookTitle.textContent = item.title;
+            if (genBookAuthor) genBookAuthor.textContent = item.author;
+            if (genBookRating) genBookRating.textContent = item.rating;
+            if (genBookReason) genBookReason.textContent = item.reason;
+            
+            // Reset button state
+            if (nightstandText) nightstandText.textContent = 'Add to Nightstand';
+            if (nightstandBtn) {
+              nightstandBtn.classList.remove('bg-primary-container', 'text-surface');
+              nightstandBtn.classList.add('bg-secondary', 'text-on-secondary');
+            }
+
+            genContainer.classList.remove('opacity-50');
+          }, 200);
+        }
+      });
+    }
+
+    if (nightstandBtn) {
+      nightstandBtn.addEventListener('click', () => {
+        if (nightstandText) {
+          if (nightstandText.textContent === 'Added to Nightstand') {
+            nightstandText.textContent = 'Add to Nightstand';
+            nightstandBtn.classList.remove('bg-primary-container', 'text-surface');
+            nightstandBtn.classList.add('bg-secondary', 'text-on-secondary');
+          } else {
+            nightstandText.textContent = 'Added to Nightstand';
+            nightstandBtn.classList.remove('bg-secondary', 'text-on-secondary');
+            nightstandBtn.classList.add('bg-primary-container', 'text-surface');
+          }
+        }
+      });
+    }
+
+    // Filter Chips — styling and shelf filtering are handled in assets/app.js
+
+    // Page Tier Buttons & Generator Filter Pills — handled in assets/app.js
+  })();
+</script></div></main><footer class="w-full bg-surface-container-low shadow-[0_-1px_6px_rgba(58,46,43,0.02)] mt-space-xl"><div class="max-w-[1200px] mx-auto px-gutter-desktop py-space-xl"><div class="grid grid-cols-1 md:grid-cols-4 gap-space-lg mb-space-lg"><div class="md:col-span-2 space-y-space-xs"><div class="flex items-center gap-space-xs"><span class="font-headline-md text-headline-sm text-primary">Folio &amp; Hearth</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">A serene shelter from hurried timelines. Dedicated to tactile reflection, unhurried literary appreciation, and cozy communion with words.</p></div><div><h4 class="font-label-md text-label-md text-on-surface mb-space-sm">Sanctuary Quarters</h4><ul class="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" data-path="the-sanctuary" href="bookshelf.html">Bookshelf Tracker</a></li><li><a class="hover:text-on-surface transition-colors" data-path="curated-nook" href="discovery.html">Rare Discoveries</a></li><li><a class="hover:text-on-surface transition-colors" data-path="the-tea-table" href="community.html">Fireside Salons</a></li><li><a class="hover:text-on-surface transition-colors" data-path="ink-and-quill" href="workshop.html">Writers' Desk</a></li></ul></div><div><h4 class="font-label-md text-label-md text-on-surface mb-space-sm">Quietude &amp; Ethos</h4><ul class="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant"><li><span class="text-on-surface-variant">Tactile Journaling</span></li><li><span class="text-on-surface-variant">Offline Shelves</span></li><li><span class="text-on-surface-variant">Community Etiquette</span></li><li><span class="text-on-surface-variant">Ex Libris Stamp</span></li></ul></div></div><div class="flex flex-col sm:flex-row items-center justify-between pt-space-md text-body-sm text-outline gap-space-sm"><span class="font-body-sm text-body-sm">Warm linen, roasted coffee, undisturbed pages. © Folio &amp; Hearth.</span><div class="flex items-center gap-space-md font-body-sm text-body-sm"><span class="text-on-surface-variant">Quiet Ledger</span><span class="text-on-surface-variant">Reading Terms</span></div></div></div></footer><!-- Mobile navigation -->
+<nav aria-label="Main navigation (mobile)" class="lg:hidden fixed bottom-0 left-0 w-full z-50 bg-surface/95 backdrop-blur-xl border-t border-outline-variant shadow-[0_-2px_12px_rgba(58,46,43,0.06)]">
+<div class="flex items-stretch justify-around px-1 py-1"><a href="index.html" class="flex flex-col items-center justify-center gap-0.5 px-2 py-2 min-w-[44px] min-h-[44px] rounded-lg transition-colors text-on-surface-variant"><span aria-hidden="true" class="material-symbols-outlined text-[22px]">local_fire_department</span><span class="font-label-sm text-[10px] leading-none">Hearth</span></a><a href="bookshelf.html" class="flex flex-col items-center justify-center gap-0.5 px-2 py-2 min-w-[44px] min-h-[44px] rounded-lg transition-colors text-on-surface-variant"><span aria-hidden="true" class="material-symbols-outlined text-[22px]">auto_stories</span><span class="font-label-sm text-[10px] leading-none">Shelf</span></a><a href="discovery.html" class="flex flex-col items-center justify-center gap-0.5 px-2 py-2 min-w-[44px] min-h-[44px] rounded-lg transition-colors text-secondary font-semibold" aria-current="page"><span aria-hidden="true" class="material-symbols-outlined text-[22px]">explore</span><span class="font-label-sm text-[10px] leading-none">Nook</span></a><a href="community.html" class="flex flex-col items-center justify-center gap-0.5 px-2 py-2 min-w-[44px] min-h-[44px] rounded-lg transition-colors text-on-surface-variant"><span aria-hidden="true" class="material-symbols-outlined text-[22px]">local_cafe</span><span class="font-label-sm text-[10px] leading-none">Tea</span></a><a href="workshop.html" class="flex flex-col items-center justify-center gap-0.5 px-2 py-2 min-w-[44px] min-h-[44px] rounded-lg transition-colors text-on-surface-variant"><span aria-hidden="true" class="material-symbols-outlined text-[22px]">edit_note</span><span class="font-label-sm text-[10px] leading-none">Quill</span></a></div></nav>
+<style>@media (max-width:1023px){body{padding-bottom:76px!important}}</style>
+<script src="assets/app.js?v=7" defer></script></body></html>

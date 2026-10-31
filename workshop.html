@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"primary-fixed":"#f2ded9","secondary-container":"#fd9d80","on-secondary-container":"#77331d","surface-container-lowest":"#ffffff","on-secondary-fixed":"#3a0a00","tertiary-fixed":"#d5e8d0","on-primary-container":"#a69591","outline":"#807572","surface":"#fcf9f4","on-surface":"#1c1c19","on-tertiary-container":"#8b9d88","tertiary-container":"#253424","outline-variant":"#d2c3c0","surface-container-highest":"#e5e2dd","surface-container-high":"#ebe8e3","on-tertiary-fixed":"#101f10","on-tertiary":"#ffffff","inverse-on-surface":"#f3f0eb","on-primary":"#ffffff","inverse-surface":"#31302d","on-secondary-fixed-variant":"#76321d","secondary":"#944931","primary":"#241917","secondary-fixed-dim":"#ffb59f","surface-container-low":"#f6f3ee","error":"#ba1a1a","background":"#fcf9f4","on-error":"#ffffff","surface-variant":"#e5e2dd","tertiary-fixed-dim":"#b9ccb5","surface-bright":"#fcf9f4","on-primary-fixed":"#241916","on-background":"#1c1c19","on-primary-fixed-variant":"#514440","primary-fixed-dim":"#d6c2be","surface-dim":"#dcdad5","surface-tint":"#6a5b58","error-container":"#ffdad6","on-surface-variant":"#4e4542","on-error-container":"#93000a","on-tertiary-fixed-variant":"#3b4b39","inverse-primary":"#d6c2be","tertiary":"#101f10","on-secondary":"#ffffff","surface-container":"#f0ede9","secondary-fixed":"#ffdbd0","primary-container":"#3a2e2b"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-md":"1rem","margin":"1.25rem","gutter-desktop":"2rem","gutter":"1.25rem","space-sm":"0.5rem","space-lg":"1.5rem","space-xl":"2.5rem","margin-desktop":"3rem","space-xs":"0.25rem"},fontFamily:{"label-sm":["Plus Jakarta Sans"],"headline-sm":["Newsreader"],"display-hero-mobile":["Newsreader"],"body-md":["Plus Jakarta Sans"],"display-hero":["Newsreader"],"body-lg":["Newsreader"],"counter-number":["Newsreader"],"headline-lg-mobile":["Newsreader"],"headline-md":["Newsreader"],"headline-lg":["Newsreader"],"body-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"]},fontSize:{"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"display-hero-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.01em","fontWeight":"400"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"display-hero":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"400"}],"body-lg":["19px",{"lineHeight":"30px","fontWeight":"400"}],"counter-number":["28px",{"lineHeight":"32px","fontWeight":"500"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","fontWeight":"400"}],"headline-md":["26px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"500"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.015em","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}]}}}};</script><link rel="icon" type="image/svg+xml" href="assets/favicon.svg"/></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(58,46,43,0.04)]"><div class="h-20 max-w-[1200px] mx-auto px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Folio &amp; Hearth Emblem" class="h-8 w-auto object-contain" src="assets/img/73fde722b3b4.jpg"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">Folio &amp; Hearth</span><span class="font-label-sm text-[11px] text-on-surface-variant tracking-normal mt-0.5">A Quiet Sanctuary for Bookworms</span></div></div><div class="hidden xl:flex items-center ml-space-sm"><div class="relative flex items-center"><span aria-hidden="true" class="material-symbols-outlined absolute left-3 text-outline text-[18px] pointer-events-none">search</span><input class="w-56 pl-9 pr-space-md py-1.5 rounded-full bg-surface-container-low text-on-surface placeholder:text-outline text-body-sm font-body-sm focus:outline-none focus:bg-surface-container-lowest transition-all" placeholder="Titles, authors, ISBN..." type="text"/></div></div></div><nav class="hidden lg:flex items-center gap-1.5 bg-surface-container-low px-2 py-1.5 rounded-full" data-active-classes="bg-primary-container text-surface font-label-md rounded-full shadow-sm"><a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="the-hearth" href="index.html">The Hearth</a><a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="the-sanctuary" href="bookshelf.html">The Sanctuary</a><a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="curated-nook" href="discovery.html">Curated Nook</a><a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="the-tea-table" href="community.html">The Tea Table</a><a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="ink-and-quill" href="workshop.html">Ink &amp; Quill</a></nav><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm"><span class="text-[14px]">☕</span><span>42m read today</span></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="hidden md:flex flex-col items-end text-right"><span class="font-label-sm text-[11px] text-on-surface-variant uppercase tracking-wider">Yearly Path</span><span class="font-headline-sm text-body-sm text-secondary font-medium leading-none">14 / 25 read</span></div><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container" src="assets/img/4573d3c7aa55.jpg"/><span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 bg-secondary rounded-full ring-1 ring-surface"></span></div></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-140px)]"><div class="max-w-[1200px] mx-auto px-gutter-desktop py-space-lg"><div class="flex flex-col w-full">
+<!-- Safe Space Guidelines Banner -->
+<div class="w-full bg-surface-container-high rounded-xl p-space-md sm:p-space-lg mb-space-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center shrink-0 text-on-secondary-fixed">
+<span aria-hidden="true" class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Our Hearth Promise</span>
+<p class="font-headline-sm text-headline-sm text-primary">A tender refuge for vulnerable first words.</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Every draft shared here is honored with gentle kindness, sincere critique, and sacred copyright respect.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-end md:self-auto shrink-0">
+<button class="px-4 py-2 rounded-full bg-surface text-on-surface font-label-md text-label-md hover:bg-surface-container transition-all flex items-center gap-1.5 shadow-sm">
+<span aria-hidden="true" class="material-symbols-outlined text-[18px] text-outline">menu_book</span>
+        Etiquette Creed
+      </button>
+</div>
+</div>
+<!-- Editorial Section Header -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg mb-space-xl">
+<div class="max-w-2xl space-y-space-xs">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm mb-space-xs">
+<span aria-hidden="true" class="material-symbols-outlined text-[16px]">edit_note</span>
+        The Writers' Hearth
+      </div>
+<h1 class="font-display-hero text-display-hero text-primary tracking-tight">Ink &amp; Quill</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+        Share your unformed drafts, seek kind and attentive eyes, and cultivate your story in the warm glow of good company.
+      </p>
+</div>
+<!-- Author Workshop CTA -->
+<div class="shrink-0 flex items-center gap-space-sm">
+<button class="px-6 py-3.5 rounded-full bg-primary-container text-surface font-label-md text-label-md hover:bg-secondary transition-all shadow-md flex items-center gap-2" id="open-new-draft-btn">
+<span aria-hidden="true" class="material-symbols-outlined text-[20px]">add</span>
+        + Share a New Manuscript / Draft
+      </button>
+</div>
+</div>
+<!-- Interactive Filter Workbench Bar -->
+<div class="w-full bg-surface-container-low rounded-xl p-space-md sm:p-space-lg mb-space-xl shadow-sm space-y-space-md">
+<!-- Format Filters -->
+<div class="flex flex-col sm:flex-row sm:items-center gap-space-sm sm:gap-space-md">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider shrink-0 w-32">Format</span>
+<div class="flex flex-wrap items-center gap-2">
+<button class="filter-format px-3.5 py-1.5 rounded-full font-label-sm text-label-sm bg-primary-container text-surface shadow-sm transition-all" data-format="all">All Shelves</button>
+<button class="filter-format px-3.5 py-1.5 rounded-full font-label-sm text-label-sm bg-surface text-on-surface hover:bg-surface-container transition-all" data-format="novella">Unfinished Novella (WIP)</button>
+<button class="filter-format px-3.5 py-1.5 rounded-full font-label-sm text-label-sm bg-surface text-on-surface hover:bg-surface-container transition-all" data-format="complete">Complete Draft</button>
+<button class="filter-format px-3.5 py-1.5 rounded-full font-label-sm text-label-sm bg-surface text-on-surface hover:bg-surface-container transition-all" data-format="chapter">Single Chapter / Prologue</button>
+<button class="filter-format px-3.5 py-1.5 rounded-full font-label-sm text-label-sm bg-surface text-on-surface hover:bg-surface-container transition-all" data-format="poetry">Poetry Collection</button>
+<button class="filter-format px-3.5 py-1.5 rounded-full font-label-sm text-label-sm bg-surface text-on-surface hover:bg-surface-container transition-all" data-format="character">Character Study</button>
+</div>
+</div>
+<!-- Feedback Sought Filters -->
+<div class="flex flex-col sm:flex-row sm:items-center gap-space-sm sm:gap-space-md pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider shrink-0 w-32">Feedback Sought</span>
+<div class="flex flex-wrap items-center gap-2">
+<button class="filter-feedback px-3 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-high text-on-surface hover:bg-surface-variant transition-all">Pacing Advice</button>
+<button class="filter-feedback px-3 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-high text-on-surface hover:bg-surface-variant transition-all">Worldbuilding Check</button>
+<button class="filter-feedback px-3 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-high text-on-surface hover:bg-surface-variant transition-all">Emotional Resonance</button>
+<button class="filter-feedback px-3 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-high text-on-surface hover:bg-surface-variant transition-all">Proofreading &amp; Polish</button>
+<button class="filter-feedback px-3 py-1 rounded-full font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed transition-all font-semibold">General Kind Thoughts</button>
+</div>
+</div>
+</div>
+<!-- Primary Content Grid: Community Manuscripts & Personal Workbench -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop mb-space-xl">
+<!-- Left Column (8 cols): Featured Manuscripts Looking for Readers -->
+<div class="lg:col-span-8 flex flex-col gap-space-xl">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span aria-hidden="true" class="material-symbols-outlined text-secondary text-[24px]">local_library</span>
+<h2 class="font-headline-md text-headline-md text-primary">Open Manuscripts Seeking Readers</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Showing 2 of 42 drafts</span>
+</div>
+<!-- Story 1: The Clockmaker of Amberley -->
+<article class="bg-surface-container-lowest rounded-xl p-space-lg sm:p-space-xl shadow-md transition-all hover:shadow-lg flex flex-col gap-space-lg relative overflow-hidden">
+<div class="absolute -top-10 -right-10 w-40 h-40 bg-secondary-fixed/40 rounded-full blur-2xl pointer-events-none"></div>
+<!-- Meta Header -->
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-md z-10">
+<div class="space-y-1">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[11px]">WIP · Chapter 4 of 12</span>
+<span class="text-outline text-body-sm">•</span>
+<span class="font-body-sm text-body-sm text-outline">14,200 total words</span>
+<span class="text-outline text-body-sm">•</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium">Updated 3 days ago</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary tracking-tight">The Clockmaker of Amberley</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">by <span class="font-medium text-primary">@arthur_pen</span> (Arthur Pendelton)</p>
+</div>
+<!-- Reader Rating Score -->
+<div class="flex items-center gap-3 bg-surface-container-low px-4 py-2.5 rounded-xl shrink-0 self-start">
+<div class="text-center">
+<span class="font-counter-number text-counter-number text-primary font-semibold leading-none">4.8</span>
+<span class="font-label-sm text-[10px] text-outline block">/ 5.0</span>
+</div>
+<div class="flex flex-col">
+<div class="flex text-secondary text-[16px]">
+<span aria-hidden="true" class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span aria-hidden="true" class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span aria-hidden="true" class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span aria-hidden="true" class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span aria-hidden="true" class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+<span class="font-label-sm text-[11px] text-on-surface-variant">18 gentle readers</span>
+</div>
+</div>
+</div>
+<!-- Tags -->
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">Cozy Fantasy</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">Gentle Mystery</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">Found Family</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">Whimsical Horology</span>
+</div>
+<!-- Story Synopsis Preview -->
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed italic bg-surface-container-low/60 p-space-md rounded-lg">
+          “Every pendulum in the village ceased its swing at precisely seven minutes past twilight. Master Orren did not reach for his magnifying loupe or his chime tweezers; he simply brewed a pot of toasted barley tea and waited for the apprentice who was never meant to return.”
+        </p>
+<!-- Writer's Specific Request Card -->
+<div class="bg-secondary-fixed/30 rounded-xl p-space-md flex items-start gap-space-md">
+<span aria-hidden="true" class="material-symbols-outlined text-secondary text-[24px] mt-0.5">psychology_alt</span>
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wide text-secondary font-semibold">Author's Guiding Question</span>
+<p class="font-body-md text-body-md text-on-surface">
+              “Looking for candid advice on the <strong>transition into Chapter 4</strong> and whether the pacing between the clockwork assembly and the lantern festival feels too languid for the emotional stakes.”
+            </p>
+</div>
+</div>
+<!-- Reader Praise Highlight Quote -->
+<div class="flex items-center gap-space-md bg-surface-container-low p-space-md rounded-xl">
+<img alt="Reader avatar" class="w-10 h-10 rounded-full object-cover shrink-0" src="assets/img/4573d3c7aa55.jpg"/>
+<div class="flex-1 min-w-0">
+<p class="font-body-sm text-body-sm text-on-surface italic line-clamp-2">
+              “The quiet banter between the clockmaker and the apprentice brought tears to my eyes. The rhythm feels like genuine ticking brass.”
+            </p>
+<span class="font-label-sm text-[11px] text-outline mt-0.5 block">— @lyra_leaves (Margin reader, Nov 14)</span>
+</div>
+</div>
+<!-- Action Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs border-t border-surface-container">
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="px-5 py-2.5 rounded-full bg-primary-container text-surface font-label-md text-label-md hover:bg-secondary transition-all shadow-sm flex items-center gap-2">
+<span aria-hidden="true" class="material-symbols-outlined text-[18px]">auto_stories</span>
+              Read Chapter 4 (12 min)
+            </button>
+<button class="px-4 py-2.5 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container transition-all flex items-center gap-2">
+<span aria-hidden="true" class="material-symbols-outlined text-[18px] text-secondary">stylus_note</span>
+              Leave Margin Feedback
+            </button>
+</div>
+<button class="px-4 py-2.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md hover:bg-secondary-container transition-all flex items-center gap-1.5">
+<span aria-hidden="true" class="material-symbols-outlined text-[18px]">coffee</span>
+            Pledge Encouragement ☕
+          </button>
+</div>
+</article>
+<!-- Story 2: Notes from a Rain-Soaked Greenhouse -->
+<article class="bg-surface-container-lowest rounded-xl p-space-lg sm:p-space-xl shadow-md transition-all hover:shadow-lg flex flex-col gap-space-lg">
+<!-- Meta Header -->
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-md">
+<div class="space-y-1">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[11px]">Short Fiction · Complete</span>
+<span class="text-outline text-body-sm">•</span>
+<span class="font-body-sm text-body-sm text-outline">6,500 words</span>
+<span class="text-outline text-body-sm">•</span>
+<span class="font-body-sm text-body-sm text-outline">4 feedback slots open</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary tracking-tight">Notes from a Rain-Soaked Greenhouse</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">by <span class="font-medium text-primary">@marina_botanica</span> (Marina S.)</p>
+</div>
+<!-- Reader Rating Score -->
+<div class="flex items-center gap-3 bg-surface-container-low px-4 py-2.5 rounded-xl shrink-0 self-start">
+<div class="text-center">
+<span class="font-counter-number text-counter-number text-primary font-semibold leading-none">4.9</span>
+<span class="font-label-sm text-[10px] text-outline block">/ 5.0</span>
+</div>
+<div class="flex flex-col">
+<div class="flex text-secondary text-[16px]">
+<span aria-hidden="true" class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span aria-hidden="true" class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span aria-hidden="true" class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span aria-hidden="true" class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span aria-hidden="true" class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-[11px] text-on-surface-variant">26 kind reviews</span>
+</div>
+</div>
+</div>
+<!-- Tags -->
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">Magical Realism</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">Botanical</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">Poetic</span>
+</div>
+<!-- Interactive Margin Annotation Feature Excerpt -->
+<div class="bg-surface-container-low rounded-xl p-space-md sm:p-space-lg flex flex-col md:flex-row gap-space-lg items-stretch">
+<!-- Text Body with Annotated Highlights -->
+<div class="flex-1 space-y-space-sm font-body-lg text-body-lg text-on-surface leading-relaxed">
+<p>
+              “The ferns drank the mist from the broken skylight with a thirst older than the glasshouse itself. 
+              <mark class="bg-secondary-fixed/50 text-on-surface px-1 py-0.5 rounded cursor-pointer hover:bg-secondary-fixed transition-colors" title="Click to view reader margin note">Underneath the damp moss of the north bench, the silver fern began unfurling its miniature silver bells,</mark> 
+              sounding inaudibly to all but the stray field mice.”
+            </p>
+<p class="font-body-sm text-body-sm text-outline italic">
+              Tap highlighted passages to inspect live reader impressions in the margin.
+            </p>
+</div>
+<!-- Reader Margin Note Popover/Card -->
+<div class="w-full md:w-64 bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between shrink-0">
+<div>
+<div class="flex items-center gap-2 mb-space-xs text-secondary font-label-sm text-[11px] uppercase tracking-wider font-semibold">
+<span aria-hidden="true" class="material-symbols-outlined text-[16px]">bookmark_heart</span>
+                Margin Reader Note
+              </div>
+<p class="font-body-sm text-body-sm text-on-surface italic">
+                “The sensory touch here is sublime. Could we get one line describing the smell of the wet soil before the bell sounds?”
+              </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs mt-space-sm border-t border-surface-container text-[11px] text-outline font-label-sm">
+<span>@willow_scribe</span>
+<span class="text-secondary font-medium">Agreed by 6</span>
+</div>
+</div>
+</div>
+<!-- Action Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="px-5 py-2.5 rounded-full bg-primary-container text-surface font-label-md text-label-md hover:bg-secondary transition-all shadow-sm flex items-center gap-2">
+<span aria-hidden="true" class="material-symbols-outlined text-[18px]">menu_book</span>
+              Read Complete Manuscript (18 min)
+            </button>
+<button class="px-4 py-2.5 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container transition-all flex items-center gap-2">
+<span aria-hidden="true" class="material-symbols-outlined text-[18px] text-secondary">add_comment</span>
+              Add Line Suggestion
+            </button>
+</div>
+<button class="px-4 py-2.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md hover:bg-secondary-container transition-all flex items-center gap-1.5">
+<span aria-hidden="true" class="material-symbols-outlined text-[18px]">coffee</span>
+            Pledge Encouragement ☕
+          </button>
+</div>
+</article>
+</div>
+<!-- Right Column (4 cols): Personal Workbench & Quiet Stats -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- My Personal Workbench Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-md space-y-space-md relative overflow-hidden">
+<div class="flex items-center justify-between pb-space-xs border-b border-surface-container">
+<div class="flex items-center gap-2">
+<span aria-hidden="true" class="material-symbols-outlined text-secondary text-[22px]">draw</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">My Personal Workbench</h3>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[11px] font-semibold">Active Author</span>
+</div>
+<!-- Author Active Project: Clara's WIP -->
+<div class="p-space-md rounded-xl bg-surface-container-low space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-[11px] uppercase tracking-wider text-outline">Current Project · Draft 2</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">In Review</span>
+</div>
+<h4 class="font-headline-md text-headline-sm text-primary">The Tea Merchant's Daughter</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Historical Fiction · 3 Chapters shared with the Hearth circle.
+          </p>
+<!-- Metrics Bento Grid -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<div class="bg-surface-container-lowest p-space-sm rounded-lg text-center">
+<span class="font-counter-number text-counter-number text-primary block">8</span>
+<span class="font-label-sm text-[11px] text-outline">Suggestions</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg text-center">
+<span class="font-counter-number text-counter-number text-secondary block">4</span>
+<span class="font-label-sm text-[11px] text-outline">Unread Critiques</span>
+</div>
+</div>
+<!-- Progress Bar -->
+<div class="space-y-1 pt-space-xs">
+<div class="flex justify-between font-label-sm text-[11px] text-on-surface-variant">
+<span>Goal: Chapter 4 rough draft</span>
+<span class="font-medium text-primary">68%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 68%;"></div>
+</div>
+</div>
+<div class="pt-space-xs flex flex-col gap-2">
+<button class="w-full py-2.5 rounded-full bg-primary-container text-surface font-label-md text-label-md hover:bg-secondary transition-all text-center flex items-center justify-center gap-1.5 shadow-sm">
+<span aria-hidden="true" class="material-symbols-outlined text-[18px]">rate_review</span>
+              Read 4 New Critiques
+            </button>
+<button class="w-full py-2 rounded-full bg-surface text-on-surface font-label-sm text-label-sm hover:bg-surface-container transition-all text-center flex items-center justify-center gap-1.5">
+<span aria-hidden="true" class="material-symbols-outlined text-[16px] text-outline">add_circle</span>
+              Publish Chapter 4 for Review
+            </button>
+</div>
+</div>
+<!-- Recent Encouragement Feed -->
+<div class="space-y-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline block">Kind Words on Your Draft</span>
+<div class="space-y-2">
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-space-xs">
+<span aria-hidden="true" class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">favorite</span>
+<div class="text-body-sm text-[12px] text-on-surface">
+<span class="font-medium text-primary">@rowan_quill</span> loved the descriptions of the oolong roasting in Chapter 2.
+              </div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-space-xs">
+<span aria-hidden="true" class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">mark_chat_read</span>
+<div class="text-body-sm text-[12px] text-on-surface">
+<span class="font-medium text-primary">@elena_reads</span> left 3 inline notes regarding historical accuracy.
+              </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Supportive Reader Etiquette Card -->
+<div class="bg-surface-container-low rounded-xl p-space-lg space-y-space-sm">
+<div class="flex items-center gap-2 text-primary">
+<span aria-hidden="true" class="material-symbols-outlined text-secondary text-[20px]">volunteer_activism</span>
+<h4 class="font-headline-sm text-headline-sm">The Gentle Reviewer's Code</h4>
+</div>
+<ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-2">
+<span aria-hidden="true" class="material-symbols-outlined text-[16px] text-secondary mt-0.5 shrink-0">check</span>
+<span>Always mention one passage or sentence that moved you before offering structural notes.</span>
+</li>
+<li class="flex items-start gap-2">
+<span aria-hidden="true" class="material-symbols-outlined text-[16px] text-secondary mt-0.5 shrink-0">check</span>
+<span>Ask curious questions rather than issuing prescriptive fixes.</span>
+</li>
+<li class="flex items-start gap-2">
+<span aria-hidden="true" class="material-symbols-outlined text-[16px] text-secondary mt-0.5 shrink-0">check</span>
+<span>Honor the draft stage: grammar polish matters less in raw outline drafts.</span>
+</li>
+</ul>
+</div>
+<!-- Workshop Inspiration Nook -->
+<div class="bg-primary-container text-surface rounded-xl p-space-lg space-y-space-xs shadow-md">
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider">Hearth Prompt of the Week</span>
+<h4 class="font-headline-sm text-headline-sm text-surface">“The Unsent Letter in the Teacup Cabinet”</h4>
+<p class="font-body-sm text-body-sm text-surface/80">
+          Write a 400-word vignette about an apology written on heavy parchment that never reached its intended recipient.
+        </p>
+<div class="pt-space-xs">
+<button class="px-4 py-1.5 rounded-full bg-surface text-primary font-label-sm text-label-sm hover:bg-surface-container transition-all">
+            Join 34 Writers
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Share Draft Modal (Hidden by Default, Toggled via inline JS) -->
+<div class="fixed inset-0 z-50 bg-primary/40 backdrop-blur-sm hidden items-center justify-center p-4" id="new-draft-modal">
+<div class="bg-surface-container-lowest max-w-xl w-full rounded-2xl p-space-lg sm:p-space-xl shadow-xl space-y-space-md max-h-[921px] overflow-y-auto">
+<div class="flex items-center justify-between pb-space-xs border-b border-surface-container">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">The Writers' Table</span>
+<h3 class="font-headline-md text-headline-md text-primary">Share a Manuscript Draft</h3>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-outline hover:text-on-surface" id="close-modal-btn">
+<span aria-hidden="true" class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="space-y-space-sm font-body-sm">
+<div>
+<label class="font-label-md text-label-md text-on-surface block mb-1">Story or Manuscript Title</label>
+<input class="w-full px-4 py-2.5 rounded-lg bg-surface-container-low text-on-surface focus:outline-none focus:bg-surface-container-lowest border border-surface-container" placeholder="e.g. The Silver Teapot of Glenmoor" type="text"/>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div>
+<label class="font-label-md text-label-md text-on-surface block mb-1">Format Category</label>
+<select class="w-full px-4 py-2.5 rounded-lg bg-surface-container-low text-on-surface focus:outline-none border border-surface-container">
+<option>Unfinished Novella (WIP)</option>
+<option>Complete Draft</option>
+<option>Single Chapter / Prologue</option>
+<option>Poetry Collection</option>
+<option>Character Study</option>
+</select>
+</div>
+<div>
+<label class="font-label-md text-label-md text-on-surface block mb-1">Feedback Desired Most</label>
+<select class="w-full px-4 py-2.5 rounded-lg bg-surface-container-low text-on-surface focus:outline-none border border-surface-container">
+<option>Pacing Advice</option>
+<option>Worldbuilding Check</option>
+<option>Emotional Resonance</option>
+<option>Proofreading &amp; Polish</option>
+<option>General Kind Thoughts</option>
+</select>
+</div>
+</div>
+<div>
+<label class="font-label-md text-label-md text-on-surface block mb-1">Author's Guiding Question to Readers</label>
+<input class="w-full px-4 py-2.5 rounded-lg bg-surface-container-low text-on-surface focus:outline-none focus:bg-surface-container-lowest border border-surface-container" placeholder="What specific question or doubt should readers focus on?" type="text"/>
+</div>
+<div>
+<label class="font-label-md text-label-md text-on-surface block mb-1">Manuscript Text or Opening Excerpt</label>
+<textarea class="w-full p-4 rounded-lg bg-surface-container-low text-on-surface focus:outline-none focus:bg-surface-container-lowest border border-surface-container" placeholder="Paste your draft excerpt or full chapter here..." rows="5"></textarea>
+</div>
+<div class="p-space-sm rounded-lg bg-secondary-fixed/30 flex items-center gap-2">
+<span aria-hidden="true" class="material-symbols-outlined text-secondary text-[20px]">lock</span>
+<span class="font-body-sm text-[12px] text-on-secondary-fixed">Drafts are timestamped and protected under Folio &amp; Hearth Creator Covenant.</span>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs border-t border-surface-container">
+<button class="px-5 py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface" id="cancel-modal-btn">Cancel</button>
+<button class="px-6 py-2.5 rounded-full bg-primary-container text-surface font-label-md text-label-md hover:bg-secondary transition-all shadow-sm">
+          Place on Hearth Shelves
+        </button>
+</div>
+</div>
+</div>
+</div></div></main><footer class="w-full bg-surface-container-low shadow-[0_-1px_6px_rgba(58,46,43,0.02)] mt-space-xl"><div class="max-w-[1200px] mx-auto px-gutter-desktop py-space-xl"><div class="grid grid-cols-1 md:grid-cols-4 gap-space-lg mb-space-lg"><div class="md:col-span-2 space-y-space-xs"><div class="flex items-center gap-space-xs"><span class="font-headline-md text-headline-sm text-primary">Folio &amp; Hearth</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">A serene shelter from hurried timelines. Dedicated to tactile reflection, unhurried literary appreciation, and cozy communion with words.</p></div><div><h4 class="font-label-md text-label-md text-on-surface mb-space-sm">Sanctuary Quarters</h4><ul class="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" data-path="the-sanctuary" href="bookshelf.html">Bookshelf Tracker</a></li><li><a class="hover:text-on-surface transition-colors" data-path="curated-nook" href="discovery.html">Rare Discoveries</a></li><li><a class="hover:text-on-surface transition-colors" data-path="the-tea-table" href="community.html">Fireside Salons</a></li><li><a class="hover:text-on-surface transition-colors" data-path="ink-and-quill" href="workshop.html">Writers' Desk</a></li></ul></div><div><h4 class="font-label-md text-label-md text-on-surface mb-space-sm">Quietude &amp; Ethos</h4><ul class="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant"><li><span class="text-on-surface-variant">Tactile Journaling</span></li><li><span class="text-on-surface-variant">Offline Shelves</span></li><li><span class="text-on-surface-variant">Community Etiquette</span></li><li><span class="text-on-surface-variant">Ex Libris Stamp</span></li></ul></div></div><div class="flex flex-col sm:flex-row items-center justify-between pt-space-md text-body-sm text-outline gap-space-sm"><span class="font-body-sm text-body-sm">Warm linen, roasted coffee, undisturbed pages. © Folio &amp; Hearth.</span><div class="flex items-center gap-space-md font-body-sm text-body-sm"><span class="text-on-surface-variant">Quiet Ledger</span><span class="text-on-surface-variant">Reading Terms</span></div></div></div></footer><!-- Mobile navigation -->
+<nav aria-label="Main navigation (mobile)" class="lg:hidden fixed bottom-0 left-0 w-full z-50 bg-surface/95 backdrop-blur-xl border-t border-outline-variant shadow-[0_-2px_12px_rgba(58,46,43,0.06)]">
+<div class="flex items-stretch justify-around px-1 py-1"><a href="index.html" class="flex flex-col items-center justify-center gap-0.5 px-2 py-2 min-w-[44px] min-h-[44px] rounded-lg transition-colors text-on-surface-variant"><span aria-hidden="true" class="material-symbols-outlined text-[22px]">local_fire_department</span><span class="font-label-sm text-[10px] leading-none">Hearth</span></a><a href="bookshelf.html" class="flex flex-col items-center justify-center gap-0.5 px-2 py-2 min-w-[44px] min-h-[44px] rounded-lg transition-colors text-on-surface-variant"><span aria-hidden="true" class="material-symbols-outlined text-[22px]">auto_stories</span><span class="font-label-sm text-[10px] leading-none">Shelf</span></a><a href="discovery.html" class="flex flex-col items-center justify-center gap-0.5 px-2 py-2 min-w-[44px] min-h-[44px] rounded-lg transition-colors text-on-surface-variant"><span aria-hidden="true" class="material-symbols-outlined text-[22px]">explore</span><span class="font-label-sm text-[10px] leading-none">Nook</span></a><a href="community.html" class="flex flex-col items-center justify-center gap-0.5 px-2 py-2 min-w-[44px] min-h-[44px] rounded-lg transition-colors text-on-surface-variant"><span aria-hidden="true" class="material-symbols-outlined text-[22px]">local_cafe</span><span class="font-label-sm text-[10px] leading-none">Tea</span></a><a href="workshop.html" class="flex flex-col items-center justify-center gap-0.5 px-2 py-2 min-w-[44px] min-h-[44px] rounded-lg transition-colors text-secondary font-semibold" aria-current="page"><span aria-hidden="true" class="material-symbols-outlined text-[22px]">edit_note</span><span class="font-label-sm text-[10px] leading-none">Quill</span></a></div></nav>
+<style>@media (max-width:1023px){body{padding-bottom:76px!important}}</style>
+<script src="assets/app.js?v=7" defer></script></body></html>

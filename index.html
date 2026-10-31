@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"primary-fixed":"#f2ded9","secondary-container":"#fd9d80","on-secondary-container":"#77331d","surface-container-lowest":"#ffffff","on-secondary-fixed":"#3a0a00","tertiary-fixed":"#d5e8d0","on-primary-container":"#a69591","outline":"#807572","surface":"#fcf9f4","on-surface":"#1c1c19","on-tertiary-container":"#8b9d88","tertiary-container":"#253424","outline-variant":"#d2c3c0","surface-container-highest":"#e5e2dd","surface-container-high":"#ebe8e3","on-tertiary-fixed":"#101f10","on-tertiary":"#ffffff","inverse-on-surface":"#f3f0eb","on-primary":"#ffffff","inverse-surface":"#31302d","on-secondary-fixed-variant":"#76321d","secondary":"#944931","primary":"#241917","secondary-fixed-dim":"#ffb59f","surface-container-low":"#f6f3ee","error":"#ba1a1a","background":"#fcf9f4","on-error":"#ffffff","surface-variant":"#e5e2dd","tertiary-fixed-dim":"#b9ccb5","surface-bright":"#fcf9f4","on-primary-fixed":"#241916","on-background":"#1c1c19","on-primary-fixed-variant":"#514440","primary-fixed-dim":"#d6c2be","surface-dim":"#dcdad5","surface-tint":"#6a5b58","error-container":"#ffdad6","on-surface-variant":"#4e4542","on-error-container":"#93000a","on-tertiary-fixed-variant":"#3b4b39","inverse-primary":"#d6c2be","tertiary":"#101f10","on-secondary":"#ffffff","surface-container":"#f0ede9","secondary-fixed":"#ffdbd0","primary-container":"#3a2e2b"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-md":"1rem","margin":"1.25rem","gutter-desktop":"2rem","gutter":"1.25rem","space-sm":"0.5rem","space-lg":"1.5rem","space-xl":"2.5rem","margin-desktop":"3rem","space-xs":"0.25rem"},fontFamily:{"label-sm":["Plus Jakarta Sans"],"headline-sm":["Newsreader"],"display-hero-mobile":["Newsreader"],"body-md":["Plus Jakarta Sans"],"display-hero":["Newsreader"],"body-lg":["Newsreader"],"counter-number":["Newsreader"],"headline-lg-mobile":["Newsreader"],"headline-md":["Newsreader"],"headline-lg":["Newsreader"],"body-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"]},fontSize:{"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"display-hero-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.01em","fontWeight":"400"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"display-hero":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"400"}],"body-lg":["19px",{"lineHeight":"30px","fontWeight":"400"}],"counter-number":["28px",{"lineHeight":"32px","fontWeight":"500"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","fontWeight":"400"}],"headline-md":["26px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"500"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.015em","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}]}}}};</script><link rel="icon" type="image/svg+xml" href="assets/favicon.svg"/></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(58,46,43,0.04)]"><div class="h-20 max-w-[1200px] mx-auto px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Folio &amp; Hearth Emblem" class="h-8 w-auto object-contain" src="assets/img/73fde722b3b4.jpg"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">Folio &amp; Hearth</span><span class="font-label-sm text-[11px] text-on-surface-variant tracking-normal mt-0.5">A Quiet Sanctuary for Bookworms</span></div></div><div class="hidden xl:flex items-center ml-space-sm"><div class="relative flex items-center"><span aria-hidden="true" class="material-symbols-outlined absolute left-3 text-outline text-[18px] pointer-events-none">search</span><input class="w-56 pl-9 pr-space-md py-1.5 rounded-full bg-surface-container-low text-on-surface placeholder:text-outline text-body-sm font-body-sm focus:outline-none focus:bg-surface-container-lowest transition-all" placeholder="Titles, authors, ISBN..." type="text"/></div></div></div><nav class="hidden lg:flex items-center gap-1.5 bg-surface-container-low px-2 py-1.5 rounded-full" data-active-classes="bg-primary-container text-surface font-label-md rounded-full shadow-sm"><a aria-current="page" class="px-3.5 py-1.5 transition-all bg-primary-container text-surface font-label-md rounded-full shadow-sm" data-path="the-hearth" href="index.html">The Hearth</a><a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="the-sanctuary" href="bookshelf.html">The Sanctuary</a><a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="curated-nook" href="discovery.html">Curated Nook</a><a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="the-tea-table" href="community.html">The Tea Table</a><a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="ink-and-quill" href="workshop.html">Ink &amp; Quill</a></nav><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm"><span class="text-[14px]">☕</span><span>42m read today</span></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="hidden md:flex flex-col items-end text-right"><span class="font-label-sm text-[11px] text-on-surface-variant uppercase tracking-wider">Yearly Path</span><span class="font-headline-sm text-body-sm text-secondary font-medium leading-none">14 / 25 read</span></div><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container" src="assets/img/4573d3c7aa55.jpg"/><span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 bg-secondary rounded-full ring-1 ring-surface"></span></div></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-140px)]"><div class="max-w-[1200px] mx-auto px-gutter-desktop py-space-lg"><div class="flex flex-col w-full">
+<!-- Atmospheric Salutation Banner -->
+<section class="relative w-full mb-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="tracking-wide uppercase">Sanctuary Log · Autumn Solstice</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+          Welcome back to the fireside, Clara.
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant italic">
+          Outside, a gentle rain taps upon the window panes. Settle in; your pages await.
+        </p>
+</div>
+<!-- Ambient Vibe Pill Bar -->
+<div class="flex flex-wrap items-center gap-space-xs bg-surface-container-low px-space-md py-space-sm rounded-full shadow-sm">
+<div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm px-2 py-1 rounded-full bg-surface-container-lowest">
+<span aria-hidden="true" class="material-symbols-outlined text-[16px] text-secondary">water_drop</span>
+<span>Rainy afternoon</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm px-2 py-1">
+<span aria-hidden="true" class="material-symbols-outlined text-[16px] text-on-surface-variant">local_cafe</span>
+<span>Earl Grey &amp; Lavender</span>
+</div>
+<div class="flex items-center gap-1.5 text-secondary font-label-sm text-label-sm px-2 py-1 bg-secondary-fixed/50 rounded-full">
+<span aria-hidden="true" class="material-symbols-outlined text-[16px]">local_fire_department</span>
+<span>18-Day Hearth Streak</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Arrangement: Currently Reading Hero Spotlight & Gentle Habit Matrix -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-xl items-start">
+<!-- Hero Spotlight: Currently Reading -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm relative overflow-hidden flex flex-col justify-between">
+<!-- Subtle Ambient Decorative Tint -->
+<div class="absolute -top-24 -right-24 w-64 h-64 rounded-full bg-secondary-container/10 pointer-events-none blur-2xl"></div>
+<div class="relative z-10">
+<div class="flex items-center justify-between pb-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary flex items-center gap-1.5">
+<span aria-hidden="true" class="material-symbols-outlined text-[16px]">auto_stories</span>
+            Currently In Hand
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low px-2.5 py-1 rounded-full">
+            Paperback Edition · Barcelona, 1945
+          </span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-12 gap-space-md items-center my-space-xs">
+<!-- Book Cover with Tactile Spine Treatment -->
+<div class="sm:col-span-4 relative group mx-auto sm:mx-0 w-36 sm:w-full max-w-[170px] aspect-[1/1.5] rounded-lg overflow-hidden shadow-md bg-surface-container-highest">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Vintage hardcover book titled The Shadow of the Wind, bound in deep toasted espresso and rust linen cloth with gold foil typography, resting on a weathered wooden reading desk beside a ceramic cup." src="assets/img/8fae090d092c.jpg"/>
+<div class="absolute inset-y-0 left-0 w-2.5 bg-gradient-to-r from-primary/30 via-primary/10 to-transparent pointer-events-none"></div>
+</div>
+<!-- Book Metadata & Progress Details -->
+<div class="sm:col-span-8 flex flex-col justify-center space-y-space-sm">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary leading-snug">
+                The Shadow of the Wind
+              </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+                Carlos Ruiz Zafón <span class="text-outline text-body-sm font-body-sm">· Trans. Lucia Graves</span>
+</p>
+</div>
+<!-- Page Metric Display -->
+<div class="space-y-1.5 pt-space-xs">
+<div class="flex justify-between items-baseline">
+<span class="font-headline-sm text-body-md text-primary font-medium">Page 312 <span class="text-on-surface-variant font-body-sm font-normal">of 487</span></span>
+<span class="font-label-md text-label-md text-secondary">64% bound</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full transition-all duration-700 ease-out" style="width: 64%;"></div>
+</div>
+<p class="font-body-sm text-body-sm text-outline flex items-center gap-1">
+<span aria-hidden="true" class="material-symbols-outlined text-[14px]">hourglass_bottom</span>
+                Approx. 2h 45m remaining at your reflective pace
+              </p>
+</div>
+<!-- Margin Quote Snippet Highlight -->
+<div class="bg-surface-container-low rounded-lg p-space-sm space-y-1">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-[11px] uppercase tracking-wider">
+<span aria-hidden="true" class="material-symbols-outlined text-[13px] text-secondary">format_quote</span>
+<span>Folded Corner · Page 189</span>
+</div>
+<p class="font-body-md text-body-sm italic text-on-surface leading-relaxed">
+                “Every book, every volume you see here, has a soul. The soul of the person who wrote it and of those who read it and lived and dreamed with it.”
+              </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Action Controls -->
+<div class="pt-space-md mt-space-sm flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-primary-container text-surface font-label-md text-label-md hover:bg-secondary transition-colors shadow-sm" id="log-time-btn">
+<span aria-hidden="true" class="material-symbols-outlined text-[18px]">timer</span>
+<span>Log 15 min read</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors" id="add-note-btn">
+<span aria-hidden="true" class="material-symbols-outlined text-[18px] text-on-surface-variant">edit_note</span>
+<span>Add Margin Note</span>
+</button>
+</div>
+<button class="inline-flex items-center gap-1 text-on-surface-variant hover:text-secondary font-label-sm text-label-sm transition-colors px-2 py-1" id="update-page-btn">
+<span aria-hidden="true" class="material-symbols-outlined text-[16px]">bookmark</span>
+<span>Update Page →</span>
+</button>
+</div>
+</div>
+<!-- Right Side: Gentle Habits & Quiet Milestones -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Reading Challenge & Peace Counter -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Pacing &amp; Horizons</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">2025 Ledger</span>
+</div>
+<div class="grid grid-cols-2 gap-space-md pt-space-xs">
+<!-- Yearly Goal -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Books Completed</span>
+<div class="my-space-xs">
+<span class="font-counter-number text-counter-number text-primary">14</span>
+<span class="font-headline-sm text-body-md text-outline"> / 25</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 56%;"></div>
+</div>
+<span class="font-label-sm text-[11px] text-outline mt-1.5">Ahead by 2 volumes</span>
+</div>
+<!-- Mindful Minutes Read This Week -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Quiet Reading Week</span>
+<div class="my-space-xs">
+<span class="font-counter-number text-counter-number text-secondary">320</span>
+<span class="font-headline-sm text-body-md text-outline"> mins</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 76%;"></div>
+</div>
+<span class="font-label-sm text-[11px] text-outline mt-1.5">Target: 420 mins unhurried</span>
+</div>
+</div>
+<!-- Inline SVG Visualization: Reading Genres Dial -->
+<div class="pt-space-md mt-space-sm flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<!-- Custom Donut SVG Chart -->
+<div class="relative w-16 h-16 flex-shrink-0">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+<!-- Background Ring -->
+<path class="text-surface-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<!-- Historical Gothic (Terracotta) 48% -->
+<path class="text-secondary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="48, 100" stroke-linecap="round" stroke-width="3.5"></path>
+<!-- Cozy Essays / Philosophy (Espresso) 32% -->
+<path class="text-primary-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="32, 100" stroke-dashoffset="-48" stroke-linecap="round" stroke-width="3.5"></path>
+<!-- Poetry & Classical Fiction 20% -->
+<path class="text-outline-variant" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="20, 100" stroke-dashoffset="-80" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<span aria-hidden="true" class="material-symbols-outlined text-[16px] text-on-surface-variant">pie_chart</span>
+</div>
+</div>
+<!-- Legend -->
+<div class="space-y-1">
+<span class="font-headline-sm text-body-sm text-primary font-medium block">Autumn Reading Palette</span>
+<div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-label-sm font-label-sm text-outline">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary inline-block"></span> Gothic Fiction (48%)</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-primary-container inline-block"></span> Reflective Essays (32%)</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-outline-variant inline-block"></span> Verse (20%)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Tea Pairing Note -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-secondary shadow-xs">
+<span aria-hidden="true" class="material-symbols-outlined text-[20px]">spa</span>
+</div>
+<div>
+<div class="font-label-sm text-label-sm text-primary">Steep Recommendation</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Bergamot, dried heather buds &amp; steamed oat milk</div>
+</div>
+</div>
+<span class="font-label-sm text-[11px] text-outline px-2.5 py-1 rounded bg-surface-container">Infusion: 4m 30s</span>
+</div>
+</div>
+</section>
+<!-- Fireside Book Club Meeting & Communal Quarters -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-xl items-stretch">
+<!-- Fireside Chat Live Widget -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">The Hearth Book Club</span>
+</div>
+<span class="font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed px-3 py-1 rounded-full font-semibold">
+            In 2 Days · 7:00 PM EST
+          </span>
+</div>
+<div class="pt-space-xs mb-space-md">
+<h3 class="font-headline-lg text-headline-md text-primary">
+            Salon: <em>The Secret History</em> by Donna Tartt
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+            Gather around the parlor fire to dissect morality, aesthetic fanaticism, and the Hampden Greek scholars.
+          </p>
+</div>
+<!-- Fellowship Row & Discussion Prompt Box -->
+<div class="space-y-space-md">
+<div class="bg-surface-container-low p-space-md rounded-lg space-y-space-xs">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-[11px] uppercase tracking-wider">
+<span aria-hidden="true" class="material-symbols-outlined text-[14px] text-secondary">psychology_alt</span>
+<span>Guiding Fireside Prompt</span>
+</div>
+<p class="font-headline-sm text-body-md text-primary italic font-normal leading-relaxed">
+              “Beauty is terror. Whatever we call beautiful, we quiver before it. Do you believe Julian Morrows romanticization of antiquity pushed the students to their limit?”
+            </p>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pt-space-xs">
+<!-- Attendees Faces Pill -->
+<div class="flex items-center gap-space-xs">
+<div class="flex -space-x-2 overflow-hidden">
+<img class="inline-block h-8 w-8 rounded-full ring-2 ring-surface-container-lowest object-cover" data-alt="Warm portrait photograph of a young woman with copper spectacles holding a paperback novel in a sunlit conservatory." src="assets/img/95b928b006e3.jpg"/>
+<img class="inline-block h-8 w-8 rounded-full ring-2 ring-surface-container-lowest object-cover" data-alt="Portrait of an older gentleman with salt-and-pepper hair wearing a brown woolen cardigan reading beside a shelf of antique volumes." src="assets/img/74694ce2814c.jpg"/>
+<img class="inline-block h-8 w-8 rounded-full ring-2 ring-surface-container-lowest object-cover" data-alt="Portrait of a contemplative reader smiling warmly with loose curls and a linen scarf in a quiet library setting." src="assets/img/fa9deb80d120.jpg"/>
+<div class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-surface-container ring-2 ring-surface-container-lowest text-[11px] font-label-sm font-semibold text-on-surface-variant">
+                  +11
+                </div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant pl-1">
+                14 solitary readers gathering virtually
+              </span>
+</div>
+<!-- Warm Soundscape Tag -->
+<div class="flex items-center gap-1.5 text-outline font-label-sm text-label-sm">
+<span aria-hidden="true" class="material-symbols-outlined text-[16px]">graphic_eq</span>
+<span>Crackle &amp; Rain Audio</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Toggles -->
+<div class="pt-space-md mt-space-md flex flex-wrap items-center justify-between gap-space-sm">
+<button class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary/90 transition-all shadow-sm" id="rsvp-toggle-btn">
+<span aria-hidden="true" class="material-symbols-outlined text-[18px]">check_circle</span>
+<span id="rsvp-text">Seat Reserved · Clara</span>
+</button>
+<button class="inline-flex items-center gap-1 text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors px-3 py-1.5">
+<span aria-hidden="true" class="material-symbols-outlined text-[16px]">file_download</span>
+<span>Add to Almanac (.ics)</span>
+</button>
+</div>
+</div>
+<!-- Community Quote Prompt: Today's Quiet Margin Note -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Communions</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span aria-hidden="true" class="material-symbols-outlined text-[14px]">history_edu</span>
+            Margin Notes
+          </span>
+</div>
+<div class="space-y-space-xs mb-space-md">
+<h3 class="font-headline-md text-headline-sm text-primary">
+            Today's Quiet Margin Note
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            A comforting fragment preserved from reader desks around the globe today.
+          </p>
+</div>
+<!-- Note Card -->
+<div class="bg-surface-container-low rounded-lg p-space-md relative overflow-hidden">
+<div class="flex items-center justify-between text-outline text-label-sm font-label-sm mb-space-xs">
+<span>Left by <strong>Julian_C</strong></span>
+<span>2 hours ago</span>
+</div>
+<blockquote class="font-body-lg text-body-lg text-primary italic leading-relaxed my-space-xs">
+            “There are darknesses in life and there are lights, and you are one of the lights, the light of all lights.”
+          </blockquote>
+<div class="flex items-center justify-between pt-space-xs mt-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+              Bram Stoker, <em>Dracula</em>
+</span>
+<!-- Teacup Endorsement Counter -->
+<button class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-label-sm hover:bg-secondary-fixed transition-colors" id="teacup-btn">
+<span aria-hidden="true" class="material-symbols-outlined text-[15px] text-secondary">emoji_food_beverage</span>
+<span id="teacup-count">48 teacups shared</span>
+</button>
+</div>
+</div>
+<!-- Interactive Quick Margin Prompt Field -->
+<div class="mt-space-md space-y-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant block" for="margin-input">
+            Add your own sentence to the hearth:
+          </label>
+<div class="relative flex items-center">
+<input class="w-full pl-3.5 pr-20 py-2.5 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline text-body-sm font-body-sm focus:outline-none focus:bg-surface-container-lowest transition-all" id="margin-input" placeholder="A line that kept you company today..." type="text"/>
+<button class="absolute right-1.5 px-3 py-1 rounded-md bg-primary-container text-surface font-label-sm text-label-sm hover:bg-secondary transition-colors" id="post-note-btn">
+              Share
+            </button>
+</div>
+</div>
+</div>
+<!-- Small sanctuary reassurance footer note -->
+<div class="pt-space-md mt-space-sm flex items-center gap-space-xs text-outline text-label-sm font-label-sm">
+<span aria-hidden="true" class="material-symbols-outlined text-[15px]">spa</span>
+<span>Every quote submitted remains anonymous unless preferred.</span>
+</div>
+</div>
+</section>
+<!-- Curated Reading Corners & Recommendations -->
+<section class="w-full bg-surface-container-low rounded-xl p-space-lg mb-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm mb-space-md">
+<div>
+<h3 class="font-headline-md text-headline-sm text-primary">The Reading Nooks Awaiting You</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Three companion volumes tailored for rainy evenings and quiet contemplation.</p>
+</div>
+<a class="inline-flex items-center gap-1 font-label-md text-label-md text-secondary hover:text-primary transition-colors" data-path="curated-nook" href="discovery.html">
+<span>Explore Library Archives</span>
+<span aria-hidden="true" class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md flex flex-col justify-between shadow-xs hover:shadow-md transition-shadow">
+<div class="space-y-space-xs">
+<div class="aspect-[3/2] w-full rounded-md overflow-hidden bg-surface-container mb-space-xs">
+<img class="w-full h-full object-cover" data-alt="An open notebook on a rustic linen tabletop next to a cup of dark coffee and a dried sprig of lavender in muted sepia morning lighting." src="assets/img/38e40d6a9ff0.jpg"/>
+</div>
+<span class="font-label-sm text-[11px] text-secondary font-semibold uppercase tracking-wider">Atmospheric Memoir</span>
+<h4 class="font-headline-sm text-body-md text-primary font-medium">A Month in the Country</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">J.L. Carr • 135 pages</p>
+<p class="font-body-sm text-body-sm text-outline pt-1">A quiet, sun-dappled meditation on recovery, ancient wall frescoes, and tranquil summer sanctuaries.</p>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Added by 12 friends</span>
+<button class="text-secondary hover:text-primary font-label-sm text-label-sm flex items-center gap-0.5">
+<span>Queue</span>
+<span aria-hidden="true" class="material-symbols-outlined text-[15px]">add</span>
+</button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md flex flex-col justify-between shadow-xs hover:shadow-md transition-shadow">
+<div class="space-y-space-xs">
+<div class="aspect-[3/2] w-full rounded-md overflow-hidden bg-surface-container mb-space-xs">
+<img class="w-full h-full object-cover" data-alt="A tranquil stone cottage library interior with floor-to-ceiling wooden bookshelves, a leather wingback armchair, and rain droplets streaming down tall mullioned glass windows." src="assets/img/fd349f194ac9.jpg"/>
+</div>
+<span class="font-label-sm text-[11px] text-secondary font-semibold uppercase tracking-wider">Japanese Solitude</span>
+<h4 class="font-headline-sm text-body-md text-primary font-medium">Days at the Morisaki Bookshop</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Satoshi Yagisawa • 160 pages</p>
+<p class="font-body-sm text-body-sm text-outline pt-1">Gentle healing nestled within second-hand stacks in Tokyo's Jimbocho literary neighborhood.</p>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Featured Staff Choice</span>
+<button class="text-secondary hover:text-primary font-label-sm text-label-sm flex items-center gap-0.5">
+<span>Queue</span>
+<span aria-hidden="true" class="material-symbols-outlined text-[15px]">add</span>
+</button>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md flex flex-col justify-between shadow-xs hover:shadow-md transition-shadow">
+<div class="space-y-space-xs">
+<div class="aspect-[3/2] w-full rounded-md overflow-hidden bg-surface-container mb-space-xs">
+<img class="w-full h-full object-cover" data-alt="Stack of old deckle-edged paper books tied with natural twine, beside brass spectacles and a burning beeswax candle on an oak surface." src="assets/img/a183a7e7defe.jpg"/>
+</div>
+<span class="font-label-sm text-[11px] text-secondary font-semibold uppercase tracking-wider">Lyrical Classical</span>
+<h4 class="font-headline-sm text-body-md text-primary font-medium">The Remains of the Day</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Kazuo Ishiguro • 258 pages</p>
+<p class="font-body-sm text-body-sm text-outline pt-1">Masterful restraint, unvoiced longings, and the wistful melancholy of evening light over English downs.</p>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Read by 84% in Hearth</span>
+<button class="text-secondary hover:text-primary font-label-sm text-label-sm flex items-center gap-0.5">
+<span>Queue</span>
+<span aria-hidden="true" class="material-symbols-outlined text-[15px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Scripts for Micro-Interactions -->
+</div></div></main><footer class="w-full bg-surface-container-low shadow-[0_-1px_6px_rgba(58,46,43,0.02)] mt-space-xl"><div class="max-w-[1200px] mx-auto px-gutter-desktop py-space-xl"><div class="grid grid-cols-1 md:grid-cols-4 gap-space-lg mb-space-lg"><div class="md:col-span-2 space-y-space-xs"><div class="flex items-center gap-space-xs"><span class="font-headline-md text-headline-sm text-primary">Folio &amp; Hearth</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">A serene shelter from hurried timelines. Dedicated to tactile reflection, unhurried literary appreciation, and cozy communion with words.</p></div><div><h4 class="font-label-md text-label-md text-on-surface mb-space-sm">Sanctuary Quarters</h4><ul class="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" data-path="the-sanctuary" href="bookshelf.html">Bookshelf Tracker</a></li><li><a class="hover:text-on-surface transition-colors" data-path="curated-nook" href="discovery.html">Rare Discoveries</a></li><li><a class="hover:text-on-surface transition-colors" data-path="the-tea-table" href="community.html">Fireside Salons</a></li><li><a class="hover:text-on-surface transition-colors" data-path="ink-and-quill" href="workshop.html">Writers' Desk</a></li></ul></div><div><h4 class="font-label-md text-label-md text-on-surface mb-space-sm">Quietude &amp; Ethos</h4><ul class="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant"><li><span class="text-on-surface-variant">Tactile Journaling</span></li><li><span class="text-on-surface-variant">Offline Shelves</span></li><li><span class="text-on-surface-variant">Community Etiquette</span></li><li><span class="text-on-surface-variant">Ex Libris Stamp</span></li></ul></div></div><div class="flex flex-col sm:flex-row items-center justify-between pt-space-md text-body-sm text-outline gap-space-sm"><span class="font-body-sm text-body-sm">Warm linen, roasted coffee, undisturbed pages. © Folio &amp; Hearth.</span><div class="flex items-center gap-space-md font-body-sm text-body-sm"><span class="text-on-surface-variant">Quiet Ledger</span><span class="text-on-surface-variant">Reading Terms</span></div></div></div></footer><!-- Mobile navigation -->
+<nav aria-label="Main navigation (mobile)" class="lg:hidden fixed bottom-0 left-0 w-full z-50 bg-surface/95 backdrop-blur-xl border-t border-outline-variant shadow-[0_-2px_12px_rgba(58,46,43,0.06)]">
+<div class="flex items-stretch justify-around px-1 py-1"><a href="index.html" class="flex flex-col items-center justify-center gap-0.5 px-2 py-2 min-w-[44px] min-h-[44px] rounded-lg transition-colors text-secondary font-semibold" aria-current="page"><span aria-hidden="true" class="material-symbols-outlined text-[22px]">local_fire_department</span><span class="font-label-sm text-[10px] leading-none">Hearth</span></a><a href="bookshelf.html" class="flex flex-col items-center justify-center gap-0.5 px-2 py-2 min-w-[44px] min-h-[44px] rounded-lg transition-colors text-on-surface-variant"><span aria-hidden="true" class="material-symbols-outlined text-[22px]">auto_stories</span><span class="font-label-sm text-[10px] leading-none">Shelf</span></a><a href="discovery.html" class="flex flex-col items-center justify-center gap-0.5 px-2 py-2 min-w-[44px] min-h-[44px] rounded-lg transition-colors text-on-surface-variant"><span aria-hidden="true" class="material-symbols-outlined text-[22px]">explore</span><span class="font-label-sm text-[10px] leading-none">Nook</span></a><a href="community.html" class="flex flex-col items-center justify-center gap-0.5 px-2 py-2 min-w-[44px] min-h-[44px] rounded-lg transition-colors text-on-surface-variant"><span aria-hidden="true" class="material-symbols-outlined text-[22px]">local_cafe</span><span class="font-label-sm text-[10px] leading-none">Tea</span></a><a href="workshop.html" class="flex flex-col items-center justify-center gap-0.5 px-2 py-2 min-w-[44px] min-h-[44px] rounded-lg transition-colors text-on-surface-variant"><span aria-hidden="true" class="material-symbols-outlined text-[22px]">edit_note</span><span class="font-label-sm text-[10px] leading-none">Quill</span></a></div></nav>
+<style>@media (max-width:1023px){body{padding-bottom:76px!important}}</style>
+<script src="assets/app.js?v=7" defer></script></body></html>
